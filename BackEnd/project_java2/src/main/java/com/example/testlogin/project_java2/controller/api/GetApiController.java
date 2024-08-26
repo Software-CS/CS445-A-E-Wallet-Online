@@ -31,7 +31,7 @@ public class GetApiController {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         List<String> list = new ArrayList<>();
-        list.add("Toi la tuong");
+        list.add("CS445 A Nhóm 3");
         JSONObject object = new JSONObject();
         object.put("message","Hello world! You are " + authentication.getName());
         object.put("API-management","https://project-java2.onrender.com/swagger-ui/index.html");
