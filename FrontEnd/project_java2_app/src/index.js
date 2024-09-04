@@ -24,7 +24,7 @@ root.render(
               <BrowserRouter>
                   <Routes>
                       <Route path="/" element={<App/>}>
-                          <Route index element={<Auth><Home /></Auth>}/>
+                          {/* <Route index element={<Auth><Home /></Auth>}/>
                           {list_nav?.routes.map((route, index) => {
                               if (route.isProtected) {
                                   return (
@@ -35,7 +35,7 @@ root.render(
                                       />
                                   );
                               }
-                          })}
+                          })} */}
                           <Route path={'/admin/users'}
                               element={<Auth>{<User/>}</Auth>}
                           />
